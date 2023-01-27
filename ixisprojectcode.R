@@ -224,7 +224,7 @@ ggplot(deviceagg, aes(x = year_month, y = transactions)) +
   geom_point( size = 3, shape = 21, fill = 'white') +
   ggtitle("12 Month Transaction Data per device used") +
   scale_x_date(date_breaks = "6 month", date_labels = "%b %Y") +
-  labs(x = "Month", y = "Sessions") +
+  labs(x = "Month", y = "Transactions") +
   facet_wrap(~ dim_deviceCategory)
 
 ggplot(deviceagg, aes(x = year_month, y = QTY)) +
@@ -232,7 +232,7 @@ ggplot(deviceagg, aes(x = year_month, y = QTY)) +
   geom_point( size = 3, shape = 21, fill = 'white') +
   ggtitle("12 Month QTY purchased Data per device used") +
   scale_x_date(date_breaks = "6 month", date_labels = "%b %Y") +
-  labs(x = "Month", y = "Sessions") +
+  labs(x = "Month", y = "QTY") +
   facet_wrap(~ dim_deviceCategory)
 
 ggplot(deviceagg, aes(x = year_month, y = ECR)) +
@@ -240,6 +240,6 @@ ggplot(deviceagg, aes(x = year_month, y = ECR)) +
   geom_point( size = 3, shape = 21, fill = 'white') +
   ggtitle("12 Month ECR Data per device used") +
   scale_x_date(date_breaks = "6 month", date_labels = "%b %Y") +
-  labs(x = "Month", y = "Sessions") +
+  labs(x = "Month", y = "ECR") +
   facet_wrap(~ dim_deviceCategory)
 
